@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://i.imgur.com/pqTjnLb.png" alt="osTicket logo"/>
+</p>
+
 ## Day 4 – Securing a Leak and Deprovisioning
 
 After a confidential contract leak jeopardized negotiations with Chicago, I was tasked with securing the file and deprovisioning the employee responsible for the breach.
