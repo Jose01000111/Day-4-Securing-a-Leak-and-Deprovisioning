@@ -5,3 +5,4 @@ After a confidential contract leak jeopardized negotiations with Chicago, I was 
 
 ### Tech Explanation:
 I encrypted the contract file using EFS and restricted access to authorized groups only. I also disabled the terminated employee’s account, removed all group memberships, and revoked access to email and systems. (Consulted ChatGPT for best practices on user deprovisioning and file encryption.)
+
