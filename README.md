@@ -10,26 +10,26 @@ I encrypted the contract file using EFS (Encrypting File System) and restricted 
 
 ### 🧪 Lab Tasks
 
-1. Create the Leaked Contracts File
+#### 1. Create the Leaked Contracts File
 Created a file named leaked_contracts.txt containing sensitive contract data.
 
 Stored it in a secure location on the system.
 
-2. Encrypt the File with Azure AD-integrated Protection
+#### 2. Encrypt the File with Azure AD-integrated Protection
 Used Azure Information Protection (AIP) to label and encrypt the file.
 
 Applied a Confidential label that restricts access to only the authorized HR and Legal groups.
 
 Confirmed the encryption and access controls were enforced via Microsoft Purview.
 
-3. Deprovision Staley the Bear's Account
+#### 3. Deprovision Staley the Bear's Account
 Disabled staley via Azure Active Directory.
 
 Removed Staley from all Azure AD groups.
 
 Forced sign-out across all sessions and devices.
 
-4. Audit and Verify
+#### 4. Audit and Verify
 
 Confirmed logs of file access and account changes through Microsoft Entra logs.
 
