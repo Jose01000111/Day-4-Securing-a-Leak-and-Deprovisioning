@@ -35,7 +35,7 @@ Confirmed logs of file access and account changes through Microsoft Entra logs.
 
 (Consulted ChatGPT for best practices on user deprovisioning and secure file handling.)
 
-⚙️ Technology Stack
+### ⚙️ Technology Stack
 #### Azure Active Directory (Azure AD)
 
 #### Azure Information Protection (AIP)
@@ -46,7 +46,7 @@ Confirmed logs of file access and account changes through Microsoft Entra logs.
 
 #### Windows EFS (Encrypting File System)
 
-🎯 Summary of Lab Goal
+### 🎯 Summary of Lab Goal
 #### ✅ Secure confidential data: Encrypt and restrict access to the leaked contract file.
 
 #### ✅ Deprovision malicious insider: Disable and remove access for Staley the Bear.
