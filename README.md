@@ -34,3 +34,21 @@ Forced sign-out across all sessions and devices.
 Confirmed logs of file access and account changes through Microsoft Entra logs.
 
 (Consulted ChatGPT for best practices on user deprovisioning and secure file handling.)
+
+⚙️ Technology Stack
+#### Azure Active Directory (Azure AD)
+
+#### Azure Information Protection (AIP)
+
+#### Microsoft Purview
+
+#### Microsoft Entra
+
+#### Windows EFS (Encrypting File System)
+
+🎯 Summary of Lab Goal
+#### ✅ Secure confidential data: Encrypt and restrict access to the leaked contract file.
+
+#### ✅ Deprovision malicious insider: Disable and remove access for Staley the Bear.
+
+#### ✅ Audit system access: Verify file access and user account changes through logs.
