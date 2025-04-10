@@ -62,7 +62,8 @@ Confirmed logs of file access and account changes through Microsoft Entra logs.
 
 (Consulted ChatGPT for best practices on user deprovisioning and secure file handling.)
 
-### ⚙️ Technology Stack
+### :💻 Technology Stack
+
 #### Azure Active Directory (Azure AD)
 
 #### Azure Information Protection (AIP)
