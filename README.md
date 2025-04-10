@@ -13,23 +13,50 @@ I encrypted the contract file using EFS (Encrypting File System) and restricted 
 #### 1. Create the Leaked Contracts File
 Created a file named leaked_contracts.txt containing sensitive contract data.
 
+<p align="center">
+<img src="https://i.imgur.com/34zJp6N.png" alt="osTicket logo"/>
+</p>
+
 Stored it in a secure location on the system.
 
-#### 2. Encrypt the File with Azure AD-integrated Protection
-Used Azure Information Protection (AIP) to label and encrypt the file.
+<p align="center">
+<img src="https://i.imgur.com/LodtLz6.png" alt="osTicket logo"/>
+</p>
 
-Applied a Confidential label that restricts access to only the authorized HR and Legal groups.
+#### 2. Blocked Staley's Azure AD Account: Prevented the user from signing in.
 
-Confirmed the encryption and access controls were enforced via Microsoft Purview.
+Removed Staley from All Group Memberships: Ensured no access to any group-based resources.
+
+<p align="center">
+<img src="https://i.imgur.com/AVrfUE1.png" alt="osTicket logo"/>
+</p>
+
+Revoked All Licenses: Revoked any assigned licenses to ensure no service access.
+
+Forced Sign-Out from All Active Sessions: Ensured that Staley the Bear was signed out from all devices and sessions.
+
+PowerShell Command Used:gpupdate /force
+
+<p align="center">
+<img src="https://i.imgur.com/vu4Jzv4.png" alt="osTicket logo"/>
+</p>
 
 #### 3. Deprovision Staley the Bear's Account
 Disabled staley via Azure Active Directory.
+
+<p align="center">
+<img src="https://i.imgur.com/7rmSPc2.png" alt="osTicket logo"/>
+</p>
 
 Removed Staley from all Azure AD groups.
 
 Forced sign-out across all sessions and devices.
 
 #### 4. Audit and Verify
+
+<p align="center">
+<img src="https://i.imgur.com/DHS7QF9.png" alt="osTicket logo"/>
+</p>
 
 Confirmed logs of file access and account changes through Microsoft Entra logs.
 
