@@ -11,56 +11,52 @@ I encrypted the contract file using EFS (Encrypting File System) and restricted 
 ### 🧪 Lab Tasks
 
 #### 1. Create the Leaked Contracts File
-Created a file named leaked_contracts.txt containing sensitive contract data.
+I created a file named leaked_contracts.txt that contained sensitive contract data. To ensure its confidentiality, I stored it in a secure and access-controlled location within the system.
 
 <p align="center">
 <img src="https://i.imgur.com/34zJp6N.png" alt="osTicket logo"/>
 </p>
 
-Stored it in a secure location on the system.
+***
 
 <p align="center">
 <img src="https://i.imgur.com/LodtLz6.png" alt="osTicket logo"/>
 </p>
 
-#### 2. Blocked Staley's Azure AD Account: Prevented the user from signing in.
+***
 
-Removed Staley from All Group Memberships: Ensured no access to any group-based resources.
+#### 2. Blocked Staley's Azure AD Account: Prevented the user from signing in.
+To immediately revoke access, I blocked Staley’s Azure Active Directory account, preventing future sign-ins. I removed the user from all group memberships to cut off access to any group-based resources. I also revoked all assigned licenses and forced a sign-out from all active sessions across devices. For good measure, I used the gpupdate /force PowerShell command to apply policy changes.
 
 <p align="center">
 <img src="https://i.imgur.com/AVrfUE1.png" alt="osTicket logo"/>
 </p>
 
-Revoked All Licenses: Revoked any assigned licenses to ensure no service access.
-
-Forced Sign-Out from All Active Sessions: Ensured that Staley the Bear was signed out from all devices and sessions.
-
-PowerShell Command Used:gpupdate /force
+***
 
 <p align="center">
 <img src="https://i.imgur.com/vu4Jzv4.png" alt="osTicket logo"/>
 </p>
 
+***
+
 #### 3. Deprovision Staley the Bear's Account
-Disabled staley via Azure Active Directory.
+I officially deprovisioned Staley’s account by disabling it in Azure Active Directory. I ensured the user was removed from all AD groups and performed a final forced sign-out to terminate any lingering sessions or access points
 
 <p align="center">
 <img src="https://i.imgur.com/7rmSPc2.png" alt="osTicket logo"/>
 </p>
 
-Removed Staley from all Azure AD groups.
-
-Forced sign-out across all sessions and devices.
+***
 
 #### 4. Audit and Verify
+I reviewed Microsoft Entra logs to confirm that the file was accessed appropriately and that all account changes were successfully logged. For assurance, I consulted ChatGPT to align the process with best practices for deprovisioning and sensitive file handling.
 
 <p align="center">
 <img src="https://i.imgur.com/DHS7QF9.png" alt="osTicket logo"/>
 </p>
 
-Confirmed logs of file access and account changes through Microsoft Entra logs.
-
-(Consulted ChatGPT for best practices on user deprovisioning and secure file handling.)
+***
 
 ### :💻 Technology Stack
 
